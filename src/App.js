@@ -1,10 +1,9 @@
-import { Button } from "react-bootstrap";
+import Navigation from "./components/navigation/Navigation";
 
 function App() {
   return (
     <div className="App">
-      <span>Hello world</span>
-      <Button>Custom bootstrap</Button>
+      <Navigation/>
     </div>
   );
 }

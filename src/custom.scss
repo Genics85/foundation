@@ -1,2 +1,11 @@
+.red{
+    border:solid red 2px;
+}
+.blue{
+    border:solid blue 2px;
+}
+
+$primary:orange;
+$secondary:#219ebc;
 
 @import '~bootstrap/scss/bootstrap.scss';
