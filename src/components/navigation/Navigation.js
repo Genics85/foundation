@@ -71,7 +71,7 @@ function Navigation() {
                   <Nav.Link href="#action2">Blog</Nav.Link>
                   <Nav.Link href="#action2">Contact</Nav.Link>
                 </Nav>
-                <Button className="rounded-pill text-light btn-secondary">Donate Now</Button>
+                <Button className="rounded-pill text-light ">Donate Now</Button>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
