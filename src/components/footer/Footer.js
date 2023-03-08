@@ -38,7 +38,6 @@ function Footer() {
             <h5>Navigation</h5>
             <p>Home</p>
             <a href="#about"><p>About</p></a>
-            <p>Services</p>
             <p>Blog</p>
             <p>Contacts</p>
           </Col>
