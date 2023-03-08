@@ -56,12 +56,12 @@ function Home() {
                 Nulla vitae elit libero, a pharetra augue mollis interdum sjdls
                 sidfs ewrwsf sfjosfj sf osjf .
               </p>
-              <Button className="rounded-pill text-white btn-text"> Join us now</Button>
+              <Button className="rounded-pill text-white "> Join us now</Button>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
       </div>
-      <section className="container my-5">
+      <section id="about" className="container my-5">
         <Container>
           <Row>
             <Col className="col-12 col-md-6">
@@ -72,7 +72,7 @@ function Home() {
                 }}
               ></div>
             </Col>
-            <Col className="col-12 col-md-6 ">
+            <Col  className="col-12 col-md-6 ">
               <h4 className="head sub-head">Who we are?</h4>
               <p style={{ lineHeight: "30px" }}>
                 Exercitation ea et laborum consequat nisi reprehenderit sint
@@ -85,7 +85,7 @@ function Home() {
                 aliquip pariatur Lorem. Reprehenderit quis aliquip aute do
                 tempor dolore quis sint eiusmod magna veniam eiusmod nostrud in.
               </p>
-              <Button className="rounded-pill p-3 text-white btn-text">Learn more</Button>
+              <Button className="rounded-pill p-3 text-white">Learn more</Button>
             </Col>
           </Row>
           <Row>

@@ -13,7 +13,7 @@ function Footer() {
       <Container>
         <Row>
           <Col className="foundation-info col-12 col-md-4">
-            <h5>Owusu</h5>
+            <h5>Oliver Charity Foundation</h5>
             <p>
               Reprehenderit magna veniam laboris laboris officia cupidatat elit
               esse. Id consequat cupidatat sunt elit eiusmod. Ea non
@@ -37,7 +37,7 @@ function Footer() {
           <Col className="col-6 col-md-2">
             <h5>Navigation</h5>
             <p>Home</p>
-            <p>About</p>
+            <a href="#about"><p>About</p></a>
             <p>Services</p>
             <p>Blog</p>
             <p>Contacts</p>
