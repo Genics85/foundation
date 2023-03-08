@@ -10,15 +10,14 @@ import {
 import {
   Facebook,
   Instagram,
-  Linkedin,
+  Snapchat,
   TelephoneFill,
-  Twitter,
 } from "react-bootstrap-icons";
 
 function Navigation() {
   return (
     <div className="navigation">
-      <header className="bg-secondary p-2">
+      <header className="d-none d-md-block bg-secondary p-2">
         <Container>
           <Row>
             <Col>
@@ -39,11 +38,9 @@ function Navigation() {
                   <Instagram className="text-light" />
                 </a>
                 <a href="twitter.com">
-                  <Twitter className="text-light" />
+                  <Snapchat className="text-light" />
                 </a>
-                <a href="linkedin.com">
-                  <Linkedin className="text-light" />
-                </a>
+                
               </div>
             </Col>
           </Row>
@@ -52,7 +49,7 @@ function Navigation() {
       {["md"].map((expand) => (
         <Navbar key={expand} bg="light" expand={expand} >
           <Container >
-            <Navbar.Brand href="#">Owusu Charity</Navbar.Brand>
+            <Navbar.Brand href="#"><span className="head mini-head">Oliver Foundation</span></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -61,7 +58,7 @@ function Navigation() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
+                  <span className="head mini-head ">Oliver Charity Foundation</span>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
@@ -71,7 +68,7 @@ function Navigation() {
                   <Nav.Link href="#action2">Blog</Nav.Link>
                   <Nav.Link href="#contact">Contact</Nav.Link>
                 </Nav>
-                <Button className="rounded-pill text-light ">Donate Now</Button>
+                <Button className="rounded-pill text-light d-none d-md-block"><span className="head">Donate now</span></Button>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>

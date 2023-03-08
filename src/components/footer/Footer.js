@@ -3,8 +3,7 @@ import { Col, Container,Row } from "react-bootstrap";
 import {
   Facebook,
   Instagram,
-  Linkedin,
-  Twitter,
+  Snapchat,
 } from "react-bootstrap-icons";
 
 function Footer() {
@@ -12,8 +11,8 @@ function Footer() {
     <footer className="bg-dark text-white p-3">
       <Container>
         <Row>
-          <Col className="foundation-info col-12 col-md-4">
-            <h5>Oliver Charity Foundation</h5>
+          <Col className="foundation-info col-12 col-md-3 mb-4">
+            <h5 className="head mini-head">Oliver Charity Foundation</h5>
             <p>
               Reprehenderit magna veniam laboris laboris officia cupidatat elit
               esse. Id consequat cupidatat sunt elit eiusmod. Ea non
@@ -21,35 +20,32 @@ function Footer() {
             </p>
             <div className="socialmedia-handles d-flex gap-4">
               <a href="facebook.com">
-                <Facebook className="text-light" />
+                <Facebook className="text-secondary" />
               </a>
               <a href="instagram.com">
-                <Instagram className="text-light" />
-              </a>
-              <a href="twitter.com">
-                <Twitter className="text-light" />
+                <Instagram className="text-secondary" />
               </a>
               <a href="linkedin.com">
-                <Linkedin className="text-light" />
+                <Snapchat className="text-secondary" />
               </a>
             </div>
           </Col>
-          <Col className="col-6 col-md-2">
-            <h5>Navigation</h5>
+          <Col className="col-6 col-md-3 mb-4">
+            <h5 className="head mini-head">Navigation</h5>
             <p>Home</p>
             <a href="#about"><p>About</p></a>
             <p>Blog</p>
             <p>Contacts</p>
           </Col>
-          <Col className="col-6 col-md-2">
-            <h5>Services</h5>
+          <Col className="col-6 col-md-3 mb-4">
+            <h5 className="head mini-head">Services</h5>
             <p>Outreach</p>
             <p>Helping orphans</p>
             <p>Water provision</p>
             <p>Giving scholarships</p>
           </Col>
-          <Col className="col-12 col-md-4">
-            <h5>Mission and goals</h5>
+          <Col className="col-12 col-md-3">
+            <h5 className="head mini-head">Mission and goals</h5>
             <p>
               Consectetur laborum aliqua minim nulla irure qui anim quis dolore
               incididunt. Reprehenderit nulla enim consequat commodo duis ea

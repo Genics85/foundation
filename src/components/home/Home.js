@@ -17,11 +17,14 @@ function Home() {
               <h3 className="carousel-label head">
                 Support a cause you care about
               </h3>
-              <p>
-                Nulla vitae elit libero, a pharetra augue mollis interdum sjdls
-                sidfs ewrwsf sfjosfj sf osjf .
+              <p className="w-50 d-none d-md-block">
+                Children are the leaders of the future and they need to get the
+                treatment of a befitting leader regardless of their condition,
+                help make this possible
               </p>
-              <Button className="rounded-pill text-white"> Join us now</Button>
+              <Button className="rounded-pill text-white">
+                <span className="btn-text"> Joing us now</span>
+              </Button>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -35,11 +38,14 @@ function Home() {
               <h3 className="carousel-label head">
                 Support a cause you care about
               </h3>
-              <p>
-                Nulla vitae elit libero, a pharetra augue mollis interdum sjdls
-                sidfs ewrwsf sfjosfj sf osjf .
+              <p className="w-50 d-none d-md-block">
+                Opportunities are available for everyone to grab, but those
+                equipped are those going to grab it, help equip the needy so
+                that they can get a share of what the future holds for everyone
               </p>
-              <Button className="rounded-pill text-white"> Join us now</Button>
+              <Button className="rounded-pill text-white">
+                <span className="btn-text"> Joing us now</span>
+              </Button>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -52,11 +58,13 @@ function Home() {
               <h3 className="carousel-label head">
                 Support a cause you care about
               </h3>
-              <p>
+              <p className="w-50 d-none d-md-block">
                 Nulla vitae elit libero, a pharetra augue mollis interdum sjdls
                 sidfs ewrwsf sfjosfj sf osjf .
               </p>
-              <Button className="rounded-pill text-white "> Join us now</Button>
+              <Button className="rounded-pill text-white ">
+                <span className="btn-text"> Joing us now</span>
+              </Button>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
@@ -72,7 +80,7 @@ function Home() {
                 }}
               ></div>
             </Col>
-            <Col  className="col-12 col-md-6 ">
+            <Col className="col-12 col-md-6 ">
               <h4 className="head sub-head">Who we are?</h4>
               <p style={{ lineHeight: "30px" }}>
                 Exercitation ea et laborum consequat nisi reprehenderit sint
@@ -85,7 +93,9 @@ function Home() {
                 aliquip pariatur Lorem. Reprehenderit quis aliquip aute do
                 tempor dolore quis sint eiusmod magna veniam eiusmod nostrud in.
               </p>
-              <Button className="rounded-pill p-3 text-white">Learn more</Button>
+              <Button className="rounded-pill text-white">
+                <span className="btn-text">Learn more</span>
+              </Button>
             </Col>
           </Row>
           <Row>
@@ -93,7 +103,7 @@ function Home() {
               <h3 className="head sub-head">We serve for peoples</h3>
               <span>Commodo qui fugiat velit occaecat adipisicing magna.</span>
             </Col>
-            <Col className="col-12 col-md-4">
+            <Col className="col-12 col-md-4 mb-3">
               <div className="d-flex flex-column justify-content-center align-items-center">
                 <div
                   className="serve-img"
@@ -110,7 +120,7 @@ function Home() {
                 </p>
               </div>
             </Col>
-            <Col className="col-12 col-md-4">
+            <Col className="col-12 col-md-4 mb-3">
               <div className="d-flex flex-column justify-content-center align-items-center">
                 <div
                   className="serve-img"
@@ -127,7 +137,7 @@ function Home() {
                 </p>
               </div>
             </Col>
-            <Col className="col-12 col-md-4">
+            <Col className="col-12 col-md-4 mb-3">
               <div className="d-flex flex-column justify-content-center align-items-center">
                 <div
                   className="serve-img"
@@ -156,16 +166,21 @@ function Home() {
                 backgroundImage: `url("https://images.unsplash.com/photo-1523847027398-d3eb27914c67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80")`,
               }}
             >
-              <Card className="w-25 p-3">
+              <Card className=" w-75 d-block d-md-none p-3">
                 <h3 className="head sub-head">They Need Your Help</h3>
                 <p>
                   Elit sint nulla pariatur ipsum. Dolor cillum consectetur
                   occaecat laborum consectetur tempor ex excepteur minim
-                  exercitation ea. Veniam nisi do duis laboris incididunt nulla.
-                  Incididunt cupidatat nisi minim magna sint officia id et.
-                  Irure anim ex dolor eu exercitation consectetur ut.
                 </p>
-                <Button className="text-white">Donate Now</Button>
+                <Button className="text-white"><span className="btn-text">Donate now</span></Button>
+              </Card>
+              <Card className=" w-25 d-none d-md-block p-3">
+                <h3 className="head sub-head">They Need Your Help</h3>
+                <p>
+                  Elit sint nulla pariatur ipsum. Dolor cillum consectetur
+                  occaecat laborum consectetur tempor ex excepteur minim
+                </p>
+                <Button className="text-white"><span className="btn-text">Donate now</span></Button>
               </Card>
             </div>
           </Row>
@@ -174,7 +189,7 @@ function Home() {
       <section className="my-5">
         <Container>
           <Row>
-            <Col className="col-12 col-md-4">
+            <Col className="col-12 col-md-4 mb-4">
               <h3 className="head sub-head">Join with Us</h3>
               <p>
                 Officia ad proident veniam nostrud id eu ipsum occaecat. Culpa
@@ -185,24 +200,25 @@ function Home() {
                 fugiat aute Lorem. Lorem ullamco occaecat eu proident laborum
                 reprehenderit enim sunt cillum deserunt nulla do.
               </p>
-              <Button className="rounded-pill text-white">Join Now</Button>
+              <Button className="rounded-pill text-white"><span className="btn-text">Join now</span></Button>
             </Col>
             <Col className="col-12 col-md-8 d-flex gap-3">
               <Col className="col-12 col-md-6 ">
-                <div className="unity-img"
+                <div
+                  className="unity-img"
                   style={{
                     backgroundImage: `url("https://images.unsplash.com/photo-1636987050384-9b079c700f63?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dW5pdHl8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60")`,
                   }}
                 ></div>
               </Col>
-              <Col className="col-12 col-md-6 ">
-                <div className="unity-img"
+              <Col className="col-12 col-md-6 d-none d-md-block ">
+                <div
+                  className="unity-img"
                   style={{
                     backgroundImage: `url("https://images.unsplash.com/photo-1547496613-4e19af6736dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvbWVsZXNzJTIwa2lkc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60")`,
                   }}
                 ></div>
               </Col>
-              
             </Col>
           </Row>
         </Container>
