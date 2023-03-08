@@ -23,7 +23,7 @@ function Home() {
                 help make this possible
               </p>
               <Button className="rounded-pill text-white">
-                <span className="btn-text"> Joing us now</span>
+                <span className="btn-text"> JoinJoin us now</span>
               </Button>
             </Carousel.Caption>
           </Carousel.Item>
@@ -44,7 +44,7 @@ function Home() {
                 that they can get a share of what the future holds for everyone
               </p>
               <Button className="rounded-pill text-white">
-                <span className="btn-text"> Joing us now</span>
+                <span className="btn-text"> Join us now</span>
               </Button>
             </Carousel.Caption>
           </Carousel.Item>
@@ -63,7 +63,7 @@ function Home() {
                 sidfs ewrwsf sfjosfj sf osjf .
               </p>
               <Button className="rounded-pill text-white ">
-                <span className="btn-text"> Joing us now</span>
+                <span className="btn-text"> Join us now</span>
               </Button>
             </Carousel.Caption>
           </Carousel.Item>
@@ -172,7 +172,9 @@ function Home() {
                   Elit sint nulla pariatur ipsum. Dolor cillum consectetur
                   occaecat laborum consectetur tempor ex excepteur minim
                 </p>
-                <Button className="text-white"><span className="btn-text">Donate now</span></Button>
+                <Button className="text-white">
+                  <span className="btn-text">Donate now</span>
+                </Button>
               </Card>
               <Card className=" w-25 d-none d-md-block p-3">
                 <h3 className="head sub-head">They Need Your Help</h3>
@@ -180,7 +182,9 @@ function Home() {
                   Elit sint nulla pariatur ipsum. Dolor cillum consectetur
                   occaecat laborum consectetur tempor ex excepteur minim
                 </p>
-                <Button className="text-white"><span className="btn-text">Donate now</span></Button>
+                <Button className="text-white">
+                  <span className="btn-text">Donate now</span>
+                </Button>
               </Card>
             </div>
           </Row>
@@ -200,7 +204,9 @@ function Home() {
                 fugiat aute Lorem. Lorem ullamco occaecat eu proident laborum
                 reprehenderit enim sunt cillum deserunt nulla do.
               </p>
-              <Button className="rounded-pill text-white"><span className="btn-text">Join now</span></Button>
+              <Button className="rounded-pill text-white">
+                <span className="btn-text">Join now</span>
+              </Button>
             </Col>
             <Col className="col-12 col-md-8 d-flex gap-3">
               <Col className="col-12 col-md-6 ">
