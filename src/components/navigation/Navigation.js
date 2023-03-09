@@ -49,7 +49,13 @@ function Navigation() {
       {["md"].map((expand) => (
         <Navbar key={expand} bg="light" expand={expand} >
           <Container >
-            <Navbar.Brand href="#"><span className="head mini-head">Oliver Foundation</span></Navbar.Brand>
+            <Navbar.Brand href="#"><div>
+              <img
+              src="../../images/logo.png"
+              alt="logo"
+              />
+            <span className="head mini-head">Oliver Foundation</span>
+              </div></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
