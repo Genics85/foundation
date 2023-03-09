@@ -1,19 +1,19 @@
 import React from "react";
-import { Col, Container,Row } from "react-bootstrap";
-import {
-  Facebook,
-  Instagram,
-  Snapchat,
-} from "react-bootstrap-icons";
+import { Col, Container, Row } from "react-bootstrap";
+import { Facebook, Instagram, Snapchat } from "react-bootstrap-icons";
+import logo from "../../images/logo.png";
 
 function Footer() {
   return (
     <footer className="bg-dark text-white p-3">
       <Container>
         <Row>
-          <Col className="foundation-info col-12 col-md-3 mb-4">
+          <Col className="foundation-info col-12 col-md-3 mb-4 ">
+            <div className=" mb-3 d-flex ">
+              <img  width={30} src={logo} alt="logo" />
+            </div>
             <h5 className="head mini-head">Oliver Charity Foundation</h5>
-            <p>
+            <p align="justify">
               Reprehenderit magna veniam laboris laboris officia cupidatat elit
               esse. Id consequat cupidatat sunt elit eiusmod. Ea non
               reprehenderit in esse consectetur quis.
@@ -33,7 +33,9 @@ function Footer() {
           <Col className="col-6 col-md-3 mb-4">
             <h5 className="head mini-head">Navigation</h5>
             <p>Home</p>
-            <a href="#about"><p>About</p></a>
+            <a href="#about">
+              <p>About</p>
+            </a>
             <p>Blog</p>
             <p>Contacts</p>
           </Col>

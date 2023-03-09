@@ -13,6 +13,7 @@ import {
   Snapchat,
   TelephoneFill,
 } from "react-bootstrap-icons";
+import logo from "../../images/logo.png";
 
 function Navigation() {
   return (
@@ -51,7 +52,9 @@ function Navigation() {
           <Container >
             <Navbar.Brand href="#"><div>
               <img
-              src="../../images/logo.png"
+              className="me-2"
+              width={24}
+              src={logo}
               alt="logo"
               />
             <span className="head mini-head">Oliver Foundation</span>
