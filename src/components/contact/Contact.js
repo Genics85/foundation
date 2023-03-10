@@ -22,21 +22,40 @@ function Contact() {
         <Row>
           <Col className="col-12 col-md-8">
             <h3 className="head mini-ub-head mb-3">Get in touch</h3>
-            <Form className="d-flex flex-column gap-4">
-              <Form.Control required as="textarea" rows={3} />
+            <Form
+              action="https://formsubmit.co/62bc4cb2c745dff2f117c2ecb0aa4ca5"
+              method="POST"
+              className="d-flex flex-column gap-4"
+            >
               <Form.Control
                 required
+                type="text"
+                name="subject"
+                placeholder="Enter subject"
+              />
+              <Form.Control required name="Body" as="textarea" rows={3} />
+              <Form.Control
+                required
+                name="name"
                 type="text"
                 placeholder="Enter your name"
               />
               <Form.Control
+                name="email"
                 required
                 type="email"
                 placeholder="Enter your email"
               />
-              <Form.Control required type="text" placeholder="Enter subject" />
+
+              <input type="hidden" name="_captcha" value="false"></input>
+              <input
+                type="hidden"
+                name="_autoresponse"
+                value="Your email has been received and recognized by Oliver Foundation, we will get back to you in due time"
+              ></input>
+              <input type="hidden" name="_captcha" value="false"></input>
               <Button type="submit">
-                <span className="head ">Submit message</span>
+                <span className="head text-white">Send e-mail</span>
               </Button>
             </Form>
           </Col>
