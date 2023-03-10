@@ -18,6 +18,14 @@
     color:white;
     font-weight: bold;
 }
+.activeNav{
+    text-decoration: none;
+    color: #219ebc;
+}
+.notActiveNav{
+    text-decoration: none;
+    color: grey;
+}
 $primary:orange;
 $secondary:#219ebc;
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Facebook, Instagram, Snapchat } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 import logo from "../../images/logo.png";
 
 function Footer() {
@@ -9,10 +10,10 @@ function Footer() {
       <Container>
         <Row>
           <Col className="foundation-info col-12 col-md-3 mb-4 ">
-            <div className=" mb-3 d-flex ">
-              <img  width={30} src={logo} alt="logo" />
-            </div>
+            <div className=" mb-3 d-flex justify-content-center gap-3">
+              <img width={30} src={logo} alt="logo" />
             <h5 className="head mini-head">Oliver Charity Foundation</h5>
+            </div>
             <p align="justify">
               Reprehenderit magna veniam laboris laboris officia cupidatat elit
               esse. Id consequat cupidatat sunt elit eiusmod. Ea non
@@ -32,12 +33,15 @@ function Footer() {
           </Col>
           <Col className="col-6 col-md-3 mb-4">
             <h5 className="head mini-head">Navigation</h5>
-            <p>Home</p>
-            <a href="#about">
-              <p>About</p>
-            </a>
-            <p>Blog</p>
-            <p>Contacts</p>
+            <Link to="/home">
+              <p>Home</p>
+            </Link>
+            <Link to="/blog">
+              <p>Blog</p>
+            </Link>
+            <Link to="/contact">
+              <p>Contacts</p>
+            </Link>
           </Col>
           <Col className="col-6 col-md-3 mb-4">
             <h5 className="head mini-head">Services</h5>
