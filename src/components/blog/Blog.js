@@ -3,7 +3,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 function Blog() {
   return (
-    <main id="contact">
+    <main id="blog">
       <Container fluid className="mb-5">
         <Row>
           <div

@@ -31,9 +31,9 @@ function Contact() {
                 required
                 type="text"
                 name="subject"
-                placeholder="Enter subject"
+                placeholder="Enter subject - want to donate/join"
               />
-              <Form.Control required name="Body" as="textarea" rows={3} />
+              <Form.Control required name="Body" as="textarea" rows={3} placeholder="Enter body of mail" />
               <Form.Control
                 required
                 name="name"
@@ -46,6 +46,12 @@ function Contact() {
                 type="email"
                 placeholder="Enter your email"
               />
+              <Form.Control
+                name="Number"
+                required
+                type="text"
+                placeholder="Enter you whatsapp number"
+              />
 
               <input type="hidden" name="_captcha" value="false"></input>
               <input
@@ -55,7 +61,7 @@ function Contact() {
               ></input>
               <input type="hidden" name="_captcha" value="false"></input>
               <Button type="submit">
-                <span className="head text-white">Send e-mail</span>
+                <span className="head text-white">Send Now</span>
               </Button>
             </Form>
           </Col>

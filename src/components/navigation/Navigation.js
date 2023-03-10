@@ -2,6 +2,7 @@ import { Container, Row, Col, Nav, Offcanvas, Navbar } from "react-bootstrap";
 import {
   Facebook,
   Instagram,
+  Mailbox2,
   Snapchat,
   TelephoneFill,
 } from "react-bootstrap-icons";
@@ -18,9 +19,9 @@ function Navigation() {
               <div className="number-mail text-light d-flex gap-4">
                 <span>
                   {" "}
-                  <TelephoneFill /> +233-234567890
+                  <TelephoneFill />+44-7459753682
                 </span>
-                <span> foundation@gmail.com</span>
+                <span><Mailbox2/> foundation@gmail.com</span>
               </div>
             </Col>
             <Col>
@@ -68,9 +69,10 @@ function Navigation() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  <span className="head mini-head ">
-                    Oliver Charity Foundation
-                  </span>
+                <div>
+                <img className="me-2" width={24} src={logo} alt="logo" />
+                <span className="head mini-head">Oliver Charity Foundation</span>
+              </div>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
@@ -83,14 +85,14 @@ function Navigation() {
                   >
                     Home
                   </NavLink>
-                  {/* <NavLink
-                    href="#about"
+                  <NavLink
+                    to="/about"
                     className={({ isActive }) =>
                       isActive ? "activeNav" : "notActiveNav"
                     }
                   >
                     About
-                  </NavLink> */}
+                  </NavLink>
                   <NavLink
                     to="/blog"
                     className={({ isActive }) =>

@@ -1,8 +1,13 @@
 import React from "react";
 import { Carousel, Button, Row, Container, Col, Card } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import "./home.scss";
 
 function Home() {
+  const navigate = useNavigate();
+  const onJoinUs = (path) => {
+    return navigate(`/${path}`);
+  };
   return (
     <main>
       <div className="home-carousel mb-5">
@@ -22,8 +27,11 @@ function Home() {
                 treatment of a befitting leader regardless of their condition,
                 help make this possible
               </p>
-              <Button className="rounded-pill text-white">
-                <span className="btn-text"> JoinJoin us now</span>
+              <Button
+                onClick={()=>onJoinUs("contact")}
+                className="rounded-pill text-white"
+              >
+                <span className="btn-text"> Join us now</span>
               </Button>
             </Carousel.Caption>
           </Carousel.Item>
@@ -43,7 +51,10 @@ function Home() {
                 equipped are those going to grab it, help equip the needy so
                 that they can get a share of what the future holds for everyone
               </p>
-              <Button className="rounded-pill text-white">
+              <Button
+                onClick={()=>onJoinUs("contact")}
+                className="rounded-pill text-white"
+              >
                 <span className="btn-text"> Join us now</span>
               </Button>
             </Carousel.Caption>
@@ -62,7 +73,10 @@ function Home() {
                 Nulla vitae elit libero, a pharetra augue mollis interdum sjdls
                 sidfs ewrwsf sfjosfj sf osjf .
               </p>
-              <Button className="rounded-pill text-white ">
+              <Button
+                onClick={()=>onJoinUs("contact")}
+                className="rounded-pill text-white"
+              >
                 <span className="btn-text"> Join us now</span>
               </Button>
             </Carousel.Caption>
@@ -93,7 +107,7 @@ function Home() {
                 aliquip pariatur Lorem. Reprehenderit quis aliquip aute do
                 tempor dolore quis sint eiusmod magna veniam eiusmod nostrud in.
               </p>
-              <Button className="rounded-pill text-white">
+              <Button onClick={()=>onJoinUs("about")} className="rounded-pill text-white">
                 <span className="btn-text">Learn more</span>
               </Button>
             </Col>
@@ -173,7 +187,7 @@ function Home() {
                   occaecat laborum consectetur tempor ex excepteur minim
                 </p>
                 <Button className="text-white">
-                  <span className="btn-text">Donate now</span>
+                  <span className="btn-text">Lets change together</span>
                 </Button>
               </Card>
               <Card className=" w-25 d-none d-md-block p-3">
@@ -204,7 +218,7 @@ function Home() {
                 fugiat aute Lorem. Lorem ullamco occaecat eu proident laborum
                 reprehenderit enim sunt cillum deserunt nulla do.
               </p>
-              <Button className="rounded-pill text-white">
+              <Button onClick={()=>onJoinUs("contact")} className="rounded-pill text-white">
                 <span className="btn-text">Join now</span>
               </Button>
             </Col>
