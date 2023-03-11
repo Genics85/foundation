@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Container, Col, Form, Button } from "react-bootstrap";
-import { Facebook, Instagram, Snapchat } from "react-bootstrap-icons";
+import { Facebook, Instagram, Mailbox, Snapchat } from "react-bootstrap-icons";
 import "./contact.scss";
 
 function Contact() {
@@ -23,7 +23,7 @@ function Contact() {
           <Col className="col-12 col-md-8">
             <h3 className="head mini-ub-head mb-3">Get in touch</h3>
             <Form
-              action="https://formsubmit.co/62bc4cb2c745dff2f117c2ecb0aa4ca5"
+              action="https://formsubmit.co/Thessboat790@gmail.com"
               method="POST"
               className="d-flex flex-column gap-4"
             >
@@ -33,7 +33,13 @@ function Contact() {
                 name="subject"
                 placeholder="Enter subject - want to donate/join"
               />
-              <Form.Control required name="Body" as="textarea" rows={3} placeholder="Enter body of mail" />
+              <Form.Control
+                required
+                name="Body"
+                as="textarea"
+                rows={3}
+                placeholder="Enter body of mail"
+              />
               <Form.Control
                 required
                 name="name"
@@ -65,7 +71,7 @@ function Contact() {
               </Button>
             </Form>
           </Col>
-          <Col className="col-12 col-md-4 d-flex flex-column gap-5 justify-content-center align-items-center head mini-head mt-4">
+          <Col className="col-12 col-md-4 d-flex flex-column gap-5 justify-content-center align-items-center head mini-head mt-4 ">
             <div>
               <a href="https://www.facebook.com/owusu.afriyie.777">
                 <Facebook />
@@ -82,6 +88,12 @@ function Contact() {
               <a href="https://www.snapchat.com/add/owusu_afriy3609?share_id=Ay/hDeZcTTOUbD+FEylRHA&locale=en_GB">
                 <Snapchat />
                 <span>Owusu Afriyie</span>
+              </a>
+            </div>
+            <div>
+              <a href="mailto::Afriyieo374@gmail.com">
+                <Mailbox />
+                <span>Afriyieo374@gmail.com</span>
               </a>
             </div>
           </Col>

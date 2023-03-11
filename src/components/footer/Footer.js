@@ -10,7 +10,7 @@ function Footer() {
       <Container>
         <Row>
           <Col className="foundation-info col-12 col-md-3 mb-4 ">
-            <div className=" mb-3 d-flex justify-content-center gap-3">
+            <div className=" mb-3 d-flex justify-content-center align-items-center gap-3">
               <img width={30} src={logo} alt="logo" />
             <h5 className="head mini-head">Oliver Charity Foundation</h5>
             </div>

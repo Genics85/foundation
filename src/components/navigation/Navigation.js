@@ -21,7 +21,7 @@ function Navigation() {
                   {" "}
                   <TelephoneFill />+44-7459753682
                 </span>
-                <span><Mailbox2/> foundation@gmail.com</span>
+                <span><Mailbox2/> Thessboat790@gmail.com </span>
               </div>
             </Col>
             <Col>
