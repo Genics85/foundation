@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Container, Col, Form, Button } from "react-bootstrap";
+import { Row, Container, Col, Form, Button,Card } from "react-bootstrap";
 import { Facebook, Instagram, Mailbox, Snapchat } from "react-bootstrap-icons";
 import "./contact.scss";
 
@@ -71,31 +71,36 @@ function Contact() {
               </Button>
             </Form>
           </Col>
-          <Col className="col-12 col-md-4 d-flex flex-column gap-5 justify-content-center align-items-center head mini-head mt-4 ">
+          <Col className="col-12 col-md-4 head mini-head mt-4 ">
+            <Card className="d-flex flex-column gap-5 justify-content-center align-items-center p-4 bg-dark">
+            <div className="text-primary head sub-head">
+              Contacts:
+            </div>
             <div>
               <a href="https://www.facebook.com/owusu.afriyie.777">
                 <Facebook />
-                <span>Sean GB Afriyie</span>
+                <span>  Sean GB Afriyie</span>
               </a>
             </div>
             <div>
               <a href="https://instagram.com/oliverperress?igshid=YmMyMTA2M2Y=">
                 <Instagram />
-                <span>@Oliverperress</span>
+                <span>  Oliverperress</span>
               </a>
             </div>
             <div>
               <a href="https://www.snapchat.com/add/owusu_afriy3609?share_id=Ay/hDeZcTTOUbD+FEylRHA&locale=en_GB">
                 <Snapchat />
-                <span>Owusu Afriyie</span>
+                <span>  Owusu Afriyie</span>
               </a>
             </div>
             <div>
               <a href="mailto::Afriyieo374@gmail.com">
                 <Mailbox />
-                <span>Afriyieo374@gmail.com</span>
+                <span>  Afriyieo374@gmail.com</span>
               </a>
             </div>
+            </Card>
           </Col>
         </Row>
       </Container>
